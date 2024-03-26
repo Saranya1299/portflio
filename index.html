@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body{
+            background-image: linear-gradient(90deg, rgba(9,9,121,1) 5%, rgba(7,53,150,1) 44%, rgba(0,212,255,1) 100%);
+            overflow-y: scroll;
+            scrollbar-width: none;
+        }
+        .head{
+            display: flex;
+            gap: 30px;
+            border: 2px solid;
+            border-image: linear-gradient(90deg, rgba(9,9,121,1) 5%, rgba(7,53,150,1) 44%, rgba(0,212,255,1) 100%);
+            height: 50px;
+            font-size: large;
+            line-height: 40px;    
+            /* background-color: antiquewhite; */
+        }
+        a{
+            text-decoration: none;
+            color: aliceblue;
+            font-size: 25px;
+        }
+        .head>.one{
+            flex-basis: 80%;
+        }
+        .head>.two{
+            display:contents
+         }   
+         .cd{
+            display: flex;
+            justify-content: center;
+            justify-content: space-evenly;
+            align-items: center;
+            /* column-gap: -10px; */
+         }
+         .matter{
+            font-size: 30px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: aliceblue;
+         }
+         .myimg{
+            display: flex;
+            /* margin-top: 50px; */
+            /* gap: 50px; */
+            justify-content: space-evenly;
+            scrollbar-width: none;
+            margin-top: 20px;
+         }
+         .intro{
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 20px;
+             
+            /* justify-content: end; */
+            /* justify-content: space-evenly; */
+         }
+         .myintro{
+            font-size: 18px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            color: aliceblue; 
+            margin-top: 20px;  
+        }
+        .flex-container {
+            display: flex;
+            align-items: stretch;
+            row-gap: 0px;
+        }
+        .flex-container > div {
+            background-color:  #449fd8;
+            color: white;
+            margin: 10px;
+            text-align: center;
+            line-height: 75px;
+            font-size: 30px;
+        }
+        .md{
+            border: 2px solid;
+            border-image: linear-gradient(90deg, rgba(9,9,121,1) 5%, rgba(7,53,150,1) 44%, rgba(0,212,255,1) 100%);
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
+        .form{
+            border: 2px solid; 
+            border-image: linear-gradient(90deg, rgba(9,9,121,1) 5%, rgba(7,53,150,1) 44%, rgba(0,212,255,1) 100%);
+            width: 350px;
+        }
+    </style>
+</head>
+<body>
+<div class="main">
+<div class="head">
+    <div class="one">
+        <a href="" style="font-size: 50px; flex-grow: 1;color: aliceblue;"><b>Saranya Sakkuru</b></a>
+    </div>
+    <div class="two">
+        <a href="./resume.pdf" download>Resume</a>
+        <a href="./port.html" class="two">Projects</a>
+        <a href="https://www.linkedin.com/in/sakkuru-saranya/" target="_blank" class="two"><i class="fa fa-linkedin" style="font-size:24px"></i></a>
+        <a href="https://github.com/Saranya1299" target="_blank" class="two"><i class="fa fa-github" style="font-size:24px"></i></a>
+    </div>
+</div>
+<div class="myimg"><img  class="img1" src="./my.jpg" height="290px" width="250px" style="border-radius: 50%;">
+    <div>
+        <b><p class="matter">Graduated Engineer From GMRIT </p>
+        <p class="matter">in the stream of Information Technology</p>
+        <p class="matter"> with interest in HTML CSS Javascript</p></b>
+    </div>
+</div>
+<div class="intro" style="flex-grow: 8;"><h3 class="h1" style="font-family: Arial, Helvetica, sans-serif;font-size: 25px; color: aliceblue;">------  Intro   ------</h3>
+    <div class="myintro">
+        <p>I am Saranya Sakkuru, a recent graduate with a professional degree in Information Technology , specializing in frontend development. </p>
+        <p>From the inception of my academic journey, I have been captivated by the artistry of web design and the potential it holds in shaping</p> 
+        <p>digital interactions. Throughout my education, I've dedicated myself to mastering the latest technologies and best practices in frontend development.</p>
+    </div>
+</div>
+</div>
+<div class="md">
+    <!-- <div class="form">Contact Me</div> -->
+    <div class="form" ><h4 style="text-align: center; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 30px; color: aliceblue;">Contact Me</h4>
+        <form style="font-size: 25px; color: aliceblue;">
+        <p><label for="fname"> <b>First Name</b> </label>
+           <input type="text" id="fname" name="firstname" placeholder="Your name.."></p>
+    
+            <label for="lname"><b>Last Name</b> </label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+            
+            <p><label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" id="email" required></p>
+
+            <p><label for="country"><b>Country </b></label>
+               <select id="country" name="country">
+               <option value="India">India</option>
+               <option value="canada">Canada</option>
+               <option value="usa">USA</option>
+               <option value="australia">Australia</option>
+               </select></p>
+            <input type="submit" value="Submit">
+            
+    </form></div>
+</div>
+</body>
+</html> 
+
